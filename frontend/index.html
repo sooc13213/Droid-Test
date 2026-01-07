@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci Test Sistemi</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div id="authPanel">
+    <h2>Öğrenci Test Sistemi</h2>
+    <button id="registerBtn">Kayıt Ol</button>
+    <button id="loginBtn">Giriş Yap</button>
+  </div>
+
+  <div id="register" style="display: none;">
+    <h2>Kayıt Ol</h2>
+    <form id="registerForm">
+      <input type="text" id="registerUsername" placeholder="Kullanıcı adı" required>
+      <input type="email" id="registerEmail" placeholder="E-posta" required>
+      <input type="password" id="registerPassword" placeholder="Şifre" required>
+      <button type="submit">Kayıt Ol</button>
+    </form>
+    <button id="backToAuth">Geri Dön</button>
+  </div>
+
+  <div id="login" style="display: none;">
+    <h2>Giriş Yap</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Kullanıcı adı" required>
+      <input type="password" id="loginPassword" placeholder="Şifre" required>
+      <button type="submit">Giriş Yap</button>
+    </form>
+    <button id="backToAuthLogin">Geri Dön</button>
+  </div>
+
+  <div id="coursesPage" style="display: none;">
+    <h2>Dersler</h2>
+    <div id="courses"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
